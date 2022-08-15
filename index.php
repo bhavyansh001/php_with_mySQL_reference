@@ -21,12 +21,12 @@
         $sql = "INSERT INTO `db_form` . `db_form_table` (`name`, `age`, `gender`, `email`, `phone`, `other`, `dt`) VALUES ('$name', '$age', '$gender', '$email', '$phone', '$other', current_timestamp());";
         // echo $sql;
 
-        if($con->query($sql) == true){
-            // echo 'Successfully inserted';
-        }
-        else{
-            // echo "ERROR: $sql <br> $con->error";
-        }
+        //if($con->query($sql) == true){
+        //    // echo 'Successfully inserted';
+        //}
+        //else{
+        //    // echo "ERROR: $sql <br> $con->error";
+        //}
 
         $con->close();
     
@@ -76,9 +76,9 @@
     <!-- <div class="container">
         This is my first PHP website.
         <?php
-        //     define('z', 99);
+        //     define('z', 99);  //defining a constant
 
-        // echo "Printed using php";
+        // echo "Printed using php"; //use double quotes, especially when dealing with database.
 
         // $variable1 = 23;
         // $variable2 = 32;
@@ -90,17 +90,17 @@
         // echo '<h3>Hello this is a heading</h3>';
         // echo '<br>';
         // $va = $variable2;
-        // echo 'The value of new variable is ';
+        // echo 'The value of new variable is '; //like in these sentences, single quotes could be replaced by double quotes.
         // echo $va;
         // echo '<br>';
 
-        // echo $variable2--;
+        // echo $variable2--; //prints then carries out decrement, output = 32
         // echo '<br>';
-        // echo --$variable2;
+        // echo --$variable2; //decrements first then carries out printing, output = 30
         // echo '<br>';
         
-        // $a = (1<4 || 2>3); //or also could be used. more that can be used are- and, &&, xor, !.
-        // echo var_dump($a);
+        // $a = (1<4 || 2>3); //or also could be used. More that can be used are- and, &&, xor, !.
+        // echo var_dump($a); //var_dump is like typeof in js.
 
         // //Data types
         // // 1. String
@@ -137,7 +137,7 @@
         // $a = 0;
         // while ($a < count($languages)) {
         //     echo 'The value of language is: ';
-        //     echo $languages[$a];
+        //     echo $languages[$a]; //indexing done here
         //     echo '<br>';
         //     $a++;
         // }
@@ -149,7 +149,7 @@
         // foreach($languages as $value){
         //     echo 'The value from foreach is: ';
         //     echo $value;
-        //     lB();
+        //     lB();  //a function defined ahead.
         // }
         // echo '<br>';
 
@@ -158,12 +158,12 @@
         // }
         // lB();
 
-        // function printNumber($num){
-        //     echo 'The number is:';
-        //     echo $num;
+        // function printNumberSum($num1, $num2){
+        //     echo 'The sum of numbers is:';
+        //     echo $num1 + $num2;
         // }
 
-        // printNumber(23);
+        // printNumberSum(23, 2);
         // lB();
 
         // $string = 'A string A';
@@ -196,6 +196,5 @@
             <button class="btn" style="float: left;">Submit</button>
         </form>
     </div>
-    
 </body>
 </html>
